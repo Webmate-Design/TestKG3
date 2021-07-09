@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content=" ">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="refresh" content="50">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>CLIENT</title>
+	
+	<link rel="stylesheet" type="text/css" href="sample.css">
+	<link rel="stylesheet" type="text/css" href="lightslider.css">
+	<link rel="shortcut icon" type="image/png" href="image/favicon.png">
+	<!--script jssss---------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+<script>
+$(document).ready(function(){
+    $("button.buy").click(function(){
+        $(".dd").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $(".imagebuy").click(function(){
+        $(".dd").toggle();
+    });
+});
+</script>
+	
+	<style> 
+
+	.n2 {
+	border-bottom-style: solid;
+	}
+	.text {
+	top:80px;
+	right:50px;
+	text-align: left;
+	justify-content:center;
+	align-items:center;
+	min-height:94px;
+	width:300px;
+	font-size:13px;
+	position:absolute;
+	color:#ffffff;
+	}
+	
+	
+	@media screen and (max-width: 767px) {
+	.text {
+	top:80px;
+	right:4%;
+	left:6%;
+	text-align: center;
+	vertical-align: text-bottom;
+	justify-content:center;
+	align-items:center;
+	min-height:94px;
+	width:90%;
+	font-size:13px;
+	position:absolute;
+	color:#ffffff;
+	}
+	}
+	
+	@media screen and (max-width: 450px) {
+	.text {
+	top:50px;
+	}
+	.bb {
+	margin-top:40px;
+}
+	}
+	
+	/* width */
+	::-webkit-scrollbar {
+	width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	}
+ 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	background: #888; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+	}
+	
+	
+	.slider {
+	  width: 300px;
+	  height: 300px;
+	  display: flex;
+	  overflow-x: auto;
+	 scroll-behavior: smooth;
+	}
+	.slide {
+	  width: 300px;
+	  flex-shrink: 0;
+	  height: 100%;
+	}
+	
+	.prev , .next {
+	position:absolute;
+	top:50%;
+	}
+	.prev {
+	left:10px;
+	}
+	.next {
+	right:10px;
+	}
+	/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+	</style>
+</head>
+<body>
+
+
+
+
+<!----dd---------------------------------------------->
+<div class="dd">
+	<div> 
+		<button class="buy">Toggle between hide() and show()</button>
+		<div class="slider">
+			  <div class="slide" id="slide-1">1</div>
+			  <div class="slide" id="slide-2">2</div>
+			  <div class="slide" id="slide-3">3</div>
+			  <div class="slide" id="slide-4">4</div>
+			  <div class="slide" id="slide-5">5</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+	</div>
+	
+	<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+	</script>
+</div>
+	
+
+
+
+
+
+
+	<!--navigation------------------------------>
+		<nav>
+		<!--menu logo-->
+			<div class="logo">
+			<h1 style="color:white;">KG</h1>
+			</div>
+		<!---navigations-->
+			<div class="nav">
+			<a href="index.html" class="nav1 n1">HOME</a>
+			<a href="shop.html" class="nav1 n2">SHOP</a>
+			<a href="buy.html" class="nav1 n3">BUY</a>
+			</div>
+		</nav>
+	
+
+<!---slider-aa--------------------------------------->
+	<div class="aa">	
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/sale03.png" media="(max-width: 450px)" style="width:100%;">
+  <source srcset="image/sale02.png" media="(max-width: 767px)" style="width:100%;">
+  <source srcset="image/sale01.png" media="(max-width: 1024px)" style="width:100%;">
+  <source srcset="image/sale0.png" style="width:100%; height:300px;">
+  <img src="image/sale0.png" style="width:100%; height:300px;">
+	</picture>
+	<div class="text">
+	  <h1>TASTE YUMMY PEPERO!</h1>
+	  Every year on November 11th, Koreans up and down the country indulge in the most delicious,
+	  chocolatey Pepero. That's because November 11th is Pepero Day in Korea. Try and experience 
+	  Korea's chocolate day celebration, Pepero!
+	  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/sale13.png" media="(max-width: 450px)" style="width:100%;">
+  <source srcset="image/sale12.png" media="(max-width: 767px)" style="width:100%;">
+  <source srcset="image/sale11.png" media="(max-width: 1024px)" style="width:100%;">
+  <source srcset="image/sale1.png" style="width:100%; height:300px;">
+  <img src="image/sale1.png" style="width:100%; height:300px;">
+	</picture>
+	<div class="text">
+  <h1>SAVOR SPICIEST SAMYANG!</h1>
+  People who tried it and loved it still buy 
+  Samyang's Buldak Bokkeummyun for its painfully 
+  spicy but addicting taste.The Different Flavors
+  Of Samyang's "Fire Noodles," Ranked According To Spice Level.
+  Can you handle the spiciest flavor?
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/sale23.png" media="(max-width: 450px)" style="width:100%;">
+  <source srcset="image/sale22.png" media="(max-width: 767px)" style="width:100%;">
+  <source srcset="image/sale21.png" media="(max-width: 1024px)" style="width:100%;">
+  <source srcset="image/sale2.png" style="width:100%; height:300px;">
+  <img src="image/sale2.png" style="width:100%; height:300px;">
+	</picture>
+	<div class="text">
+  <h1>HOW ABOUT YOPOKKI?</h1>
+  Experience the Authentic Korean Favourite Snack in an Instant!
+  Yopokki captures the unique Korean flavor of everyone's favorite street food, tteokbokki.
+  Don't miss the rich flavor of sweet and spicy sauce of Yopokki.
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/sale33.png" media="(max-width: 450px)" style="width:100%;">
+  <source srcset="image/sale32.png" media="(max-width: 767px)" style="width:100%;">
+  <source srcset="image/sale31.png" media="(max-width: 1024px)" style="width:100%;">
+  <source srcset="image/sale3.png" style="width:100%; height:300px;">
+  <img src="image/sale3.png" style="width:100%; height:300px;">
+	</picture>
+	<div class="text">
+  <h1>TRY OUR BINGGRAE!</h1>
+  Binggrae's Banana-flavored milk is Korea’s  national 
+  favorite No.1 selling Banana milk. Binggrae gives the 
+  taste full of nutrients.  Taste different chocolatey flavored Binggrae!
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/sale43.png" media="(max-width: 450px)" style="width:100%;">
+  <source srcset="image/sale42.png" media="(max-width: 767px)" style="width:100%;">
+  <source srcset="image/sale41.png" media="(max-width: 1024px)" style="width:100%;">
+  <source srcset="image/sale4.png" style="width:100%; height:300px;">
+  <img src="image/sale4.png" style="width:100%; height:300px;">
+	</picture> 
+	<div class="text">
+  <h1>DON'T MISS CHUPA CHUPS!</h1>
+  Sweet, and refreshing with an almost creamy aftertaste,
+  and a distinct note of citrus. It’s a very light and smooth
+  drink that hits the palate just right. It’s also incredibly
+  moreish, and tastes significantly. Try Chupa Chups now!
+  </div>
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center; width:50%;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 4 seconds
+}
+</script>
+
+					
+	</div>
+
+
+
+
+
+	<!---<div class="sub-heading"><p>Thin cookie stick with compound chocolate dipped in the outer layer.</p></div>---->
+
+	<!---web-sub-heading-bb-------------------------------->
+	<div class="bb" style="color:#004d4d;"> <h1>Korean Go</h1><p style="color:#808080; font-size:14px;">Korean Go is a minimart that have an authentic
+	Korean products and foods. We offer a door to door delivery and a Gcash payment.
+	Available within the City of Malayabalay. Order and experience authentic Korean foods, and taste Korea!</p></div>
+	
+	
+	
+	
+	
+	
+	
+	<!---all sales cc----------------------------------------------->
+		<div class="cc" style="margin-top:150px;">
+			<!---title--->
+			<div class="heading"><h1>PEPERO</h1></div>
+			
+
+					<div class="salecontainer sc1">
+						<!---------boxes for individual sale---------->
+						<div class="sale">
+							<!--------sales content------------------->
+							<div class="saleimg imagebuy" ><img src="image/pepero2.png" style="height:280px;"></div>
+							<div class="saledes"><p>Lotte Pepero<br>Original</p><p style="font-weight:bold;">75 PHP</p>
+							<button class="buy">buy</button>
+							</div>
+						</div>
+						<div class="sale">
+							<!--------sales content------------------->
+							<div class="saleimg imagebuy"><img src="image/pepero3.png" style="height:280px;"></div>
+							<div class="saledes"><p>Lotte Pepero<br>Almond</p><p style="font-weight:bold;">90 PHP</p>
+							<button class="buy">buy</button>
+							</div>
+						</div>
+						<div class="sale">
+							<!--------sales content------------------->
+							<div class="saleimg imagebuy"><img src="image/pepero4.png" style="height:280px;"></div>
+							<div class="saledes"><p>Lotte Pepero<br>Cookies and Cream</p><p style="font-weight:bold;">80 PHP</p>
+							<button class="buy">buy</button>
+							</div>
+						</div>
+						<div class="sale">
+							<!--------sales content------------------->
+							<div class="saleimg imagebuy"><img src="image/pepero5.png" style="height:280px;"></div>
+							<div class="saledes"><p>Lotte Pepero<br>Strawberry</p><p style="font-weight:bold;">80 PHP</p>
+							<button class="buy">buy</button>
+							</div>
+						</div>
+						<div class="sale">
+							<!--------sales content------------------->
+							<div class="saleimg imagebuy"><img src="image/pepero1.png" style="height:280px;"></div>
+							<div class="saledes"><p>Bibigo Dried<br>Seaweed Snack</p><p style="font-weight:bold;">20 PHP</p>
+							<button class="buy">buy</button>
+							</div>
+						</div>
+					</div>
+		</div>
+			
+	
+	
+	
+	
+	
+	
+	<!---cc----------------------------------------------->
+		<div class="cc">
+			<!---title--->
+			<div class="heading"><h1>SAMYANG</h1></div>
+			
+			
+
+			<div class="salecontainer sc2">
+				<!---------boxes for individual sale---------->
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/samyang1.png" style="height:200px;"></div>
+					<div class="saledes"><p>Samyang<br>Hot Chicken Ramen</p><p style="font-weight:bold;">100 PHP</p>
+						<button> <a href="buy.html#button">buy </a></button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/samyang2.png" style="height:200px;"></div>
+					<div class="saledes"><p>Samyang Cheese<br>Hot Chicken Ramen</p><p style="font-weight:bold;">100 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/samyang3.png" style="height:200px;"></div>
+					<div class="saledes"><p>Samyang Spicy Red x4<br>Hot Chicken Ramen </p><p style="font-weight:bold;">135 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/samyang4.png" style="height:200px;"></div>
+					<div class="saledes"><p>Samyang Spicy Red x2<br>Hot Chicken Ramen </p><p style="font-weight:bold;">135 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/samyang5.png" style="height:200px;"></div>
+					<div class="saledes"><p>Samyang Super<br>Spicy Fire Ramen </p><p style="font-weight:bold;">100 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	<!---cc----------------------------------------------->
+		<div class="cc">
+			<!---title--->
+			<div class="heading"><h1>YOPOKKI</h1></div>
+			<div class="salecontainer sc3">
+				<!---------boxes for individual sale---------->
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/yopokki1.png" style="height:280px;"></div>
+					<div class="saledes"><p>Hot and Spicy<br>Yopokki</p><p style="font-weight:bold;">175 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/yopokki2.png" style="height:280px;"></div>
+					<div class="saledes"><p>Sweet & Spicy<br>Yopokki</p><p style="font-weight:bold;">175 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/yopokki3.png" style="height:280px;"></div>
+					<div class="saledes"><p>Cheese<br>Yopokki</p><p style="font-weight:bold;">175 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/yopokki4.png" style="height:280px;"></div>
+					<div class="saledes"><p>Golden Onion<br>Butter Yopokki</p><p style="font-weight:bold;">175 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	
+	
+
+
+	
+	<!---cc----------------------------------------------->
+		<div class="cc">
+			<!---title--->
+			<div class="heading"><h1>BINGGRAE</h1></div>
+			<div class="salecontainer sc4">
+				<!---------boxes for individual sale---------->
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/binggrae1.png" style="height:280px;"></div>
+					<div class="saledes"><p>Bingrae<br>Banana Milk</p><p style="font-weight:bold;">85 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/binggrae2.png" style="height:280px;"></div>
+					<div class="saledes"><p>Bingrae<br>Strawberry Milk</p><p style="font-weight:bold;">85 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!---cc----------------------------------------------->
+		<div class="cc">
+			<!---title--->
+			<div class="heading"><h1>CHUPA CHUPS</h1></div>
+			<div class="salecontainer sc5">
+				<!---------boxes for individual sale---------->
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/chupa1.png" style="height:280px;"></div>
+					<div class="saledes"><p>Chupa Chups Orange<br>Sparkling Drink</p><p style="font-weight:bold;">60 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/chupa2.png" style="height:280px;"></div>
+					<div class="saledes"><p>Chupa Chups Grape<br>Sparkling Drink </p><p style="font-weight:bold;">60 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/chupa3.png" style="height:280px;"></div>
+					<div class="saledes"><p>Chupa Chups Strawberry<br>Sparkling Drink</p><p style="font-weight:bold;">60 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+				<div class="sale">
+					<!--------sales content------------------->
+					<div class="saleimg imagebuy"><img src="image/chupa4.png" style="height:280px;"></div>
+					<div class="saledes"><p>Chupa Chups Melon Cream<br>Sparkling Drink</p><p style="font-weight:bold;">60 PHP</p>
+					<button class="buy">buy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+</body>
+</html>

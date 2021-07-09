@@ -1,0 +1,338 @@
+@charset "utf-8";
+	/* CSS sa sample */
+	/*  width  laptop:min 1024    tablet:768-1023     phone: max 767     */
+	/*  height laptop:min 600    tablet:1024-768     phone: max 767-480s     */
+	/*   @media screen and (max-width: 406px) {   */
+	/*  border:1px solid #3d3d3e; */
+
+* {
+	margin:0px 0px;
+	padding:0px 0px;
+	font-family:calibri;
+}
+		
+	
+	
+	
+body {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	font-size:16px;
+}
+	
+	
+	
+	
+	
+	
+	
+/*--------------navigation container-------------*/
+nav {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+	width:100%;
+	height:90px;
+	background-color:#fea9ad;
+	
+	}
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+
+	/*item 1*/
+.logo {
+	display:flex;
+	width: 10%;
+	margin-left:50px;
+	}
+.logo a{
+	}
+
+	/*item 2*/
+.nav {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	justify-content:flex-end;
+	margin-right:50px;
+}
+@media screen and (max-width: 265px) {
+	.nav {
+	margin-right:0px;
+	width:100%;
+	
+}
+}
+
+		
+		/*item 2.a*/
+.nav1{
+	width:45px;
+	height:12px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+	font-family:calibri;
+	font-weight:;
+	font-family:calibri;
+	border-radius:70px;
+	margin-left:10px;
+	text-decoration:none;
+	font-size:13px;
+	color:#ffffff;
+	padding:2px 1px;
+	}
+.nav1:hover{
+	background-color:skyblue;
+	color:#ffffff;
+	transition:all ease 0.1s;
+	}
+
+	
+	
+	
+	
+	
+	
+/*----------------slide--aa-container--------------------------*/
+
+.aa {
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+}
+	/* Slideshow container */
+.slideshow-container {
+	display:flex;
+  width: 100%;
+}
+
+.mySlides {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	position:relative;
+	height:300px;
+}
+
+
+.shopimage {
+	display:flex;
+	align:center;
+	width:100%;
+	height:400px;
+}
+@media screen and (max-width: 1023px) {
+	.shopimage {
+		height:600px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.shopimage {
+		height:500px;
+	}
+}
+/* Caption text */
+.shoptext {
+  color: #f2f2f2;
+  font-size: 15px;
+  width: 90%;
+  text-align: left;
+  bottom:0px;
+  position:absolute;
+  z-index:1px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  width:auto;
+  top: 0;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+/*-----------------Description-of-the-business--bb-------------------*/
+.bb {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:50%;
+	margin-top:50px;
+	text-align: center;
+	vertical-align: text-bottom;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+
+
+
+/*----------------SALE 1 2 3--cc-container--------------------------*/
+.cc {
+	width:90%;
+	min-height:200px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:space-around;
+	margin-top:100px;
+}
+		/*-------------3rth container for sale----------------------*/
+.salecontainer {
+	width:100%;
+	min-height:200px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	align-content:space-around;
+	margin-top:30px;
+}
+
+				/*------Individual Boxes for ind. sale---------------*/
+.sale {
+	width:auto;
+	height: auto;
+	margin-bottom:20px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+}
+@media screen and (max-width: 406px) {
+	.sale {
+	width:100%;
+	}
+	.saleimg img {
+	width:100%;
+	}
+}
+
+
+					/*------------Content sa Sale-------------------*/
+.saleimg {
+	width:auto;
+	height: auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:center;
+	margin-right:40px;
+	margin-left:40px;
+	border-bottom-color:black;
+	transition: transform .2s;
+}
+.saleimg:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
+}
+
+
+
+.saledes {
+	width:100%;
+	min-height:30px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center; 
+	text-align:center;
+}
+
+.heading {
+	color:#808080;
+}
+
+.sub-heading {
+	font-size:14px;
+	color:#808080;
+}
+
+
+
+
+
+/*-----------------individual buying--dd-------------------*/
+div.dd {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height:100%;
+  background-color:#fea9ad;
+  z-index:77;
+  display:none;
+}
+.buy {
+	background-color:skyblue;
+	color:white;
+	border:none;
+	padding:2px 10px;
+	margin-top:7px;
+	border-radius:100px;
+}
+.buy:hover {
+	background-color:blue;
+}
+.dd>.buy {
+	z-index:10px;
+}
+
+
+
+
+

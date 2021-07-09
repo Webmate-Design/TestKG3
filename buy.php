@@ -1,0 +1,1188 @@
+<?php
+if($_POST["message"]) {
+    mail("s.baquirquir.witnhess@cmu.edu.ph", "Korean Go's Client", $_POST["message"], "From: an@email.address");
+}
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="keywords" content="Korean Go, Korean Food, snack, malaybalay, dessert">
+	<meta name="description" content="Korean Go is a minimart that have an authentic Korean products and foods.The product/s will be deliveried door to door within 24 hours since purchased. Available only within the City of Malaybalay. Order and experience authentic Korean foods, and taste Korea!">
+	<meta name="author" content="Witnhess B. Baquirquir">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Korean Go</title>
+	
+	<link rel="stylesheet" type="text/css" href="sample.css">
+	<meta charset="UTF-8">
+	  
+	<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+	<meta name="apple-mobile-web-app-title" content="CodePen">
+
+	<link rel="shortcut icon" type="image/png" href="image/favicon.ico"><link rel="shortcut icon" type="image/png" href="image/favicon.ico">
+	<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+<style>
+
+body {font-family: Verdana, sans-serif; margin:0; background-color:#fea9ad; }
+
+
+.n3 {
+	border-bottom-style: solid;
+	}
+
+
+.nav1{
+	width:45px;
+	height:12px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+	font-family:calibri;
+	font-weight:;
+	font-family:calibri;
+	border-radius:70px;
+	margin-left:10px;
+	text-decoration:none;
+	font-size:13px;
+	color:#ffffff;
+	padding:2px 1px;
+	}
+
+
+div.slideshow-container1 > * {
+	box-sizing: border-box; font-family: Verdana, sans-serif; margin:0;
+}
+
+.mySlides1 {
+	height:590px;
+	background-color:rgba(0,36,72, 1);
+}
+
+.imgi {
+	width:55%; height:auto;margin-left:100px;
+}
+
+/* Caption text */
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 25%;
+  right:100px;
+  top:50px;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot1:hover {
+  background-color: #717171;
+}
+
+
+/* Position the "next button" to the right */
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:30px;
+}
+.prev1 {
+	margin-left:30px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+.mySlides1 {
+	height:1024px;
+	}
+.imgi {
+	height:auto; width:100%;margin-left:0px;
+}
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  top:	800px;
+  right:0px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 777px) {
+.text1 {
+	top: 670px;
+}
+}
+@media screen and (max-width: 600px) {
+
+.mySlides1 {
+	height:568px;
+	}
+.imgi {
+	height:auto; width:100%;margin-left:0px;
+}
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  top:500px;
+  right:0px;
+  text-align: center;
+}
+.dot1 {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+	}
+	
+@media screen and (max-width: 406px) {
+.mySlides1 {
+	height:568px;
+	}
+.imgi {
+	height:auto; width:100%;margin-left:0px;
+}
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  top:350px;
+  right:0px;
+  text-align: center;
+}
+.dot1 {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot1 {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+}
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:0px;
+}
+.prev1 {
+	margin-left:0px;
+}
+}		
+	
+.imgi {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+  text-decoration:none;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade1 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev1, .next1,.text1 {font-size: 11px}
+}
+
+
+
+.slider {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-top:45px;
+  margin-bottom:30px;
+  background-color:rgba(0,36,72, 1);
+}
+.ee {
+	background-color:rgba(0,36,72, 1);
+	width:100%;
+}
+.slide {
+  width: 100px;
+  flex-shrink: 0;
+  height: auto;
+  margin:0px 50px;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color: rgba(0,0,172,0.1);
+  padding:5px 0px;
+}
+.slide:hover {
+background-color: rgba(0,0,0,0.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+.slides > div {
+  scroll-snap-align: start;
+}
+
+.subimg {
+width:auto;
+height:80%;
+bottom:0px;
+}
+@media screen and (max-width: 470px) {
+.slide {
+  width: 100px;
+  flex-shrink: 0;
+  height: auto;
+  margin:3px 0px;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color: rgba(0,0,172,0.1);
+  padding:10px 0px;
+}
+}
+
+
+.slider::-webkit-scrollbar {
+    width:0px;height: 7px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background-color: rgba (0,0,0,0);
+	height:1px;
+    
+}
+.row::-webkit-scrollbar {
+    width:0px;height: 20px;
+}
+
+.row::-webkit-scrollbar-track {
+    background-color: #002060;
+	height:1px;
+    
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	height:7px;
+    background-color: #4472c4;
+}
+
+
+
+
+
+
+
+.table-cart > tr > td {
+  vertical-align: middle !important;
+}
+
+
+
+
+.bb {
+	margin-top:250px;
+}
+
+.s22 {
+	display:flex;
+	justify-content:flex-start;
+	align-items:flex-start;
+	padding:7px 7px;
+	border-right:1px solid #ffffff;
+}
+
+.simg {
+	justify-content:flex-start;
+	width:auto;
+	height:100%;
+}
+
+
+
+
+.row{
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-top:0px;
+  margin-bottom:0px;
+  background-color:rgba(0,36,72, 1);
+
+}
+.s2 {
+height:550px;
+width:100%;
+}
+.btna {
+	color:#ffffff;
+	padding:3px 10px;
+	border-radius:77px	;
+	border:none;
+	background-color:#79a6ff;
+	margin-top:15px;
+}
+.btna:hover {
+	border:none;
+	background-color:#1c56c9;
+}
+.btna:active {
+	border:none;
+	background-color:#002060;
+}
+.s22 {
+	width:100%;
+	height:100%;
+}
+@media screen and (max-width: 1024px) {
+.s2 {
+height:1100px;
+width:100%;
+align-content:center;
+}
+.simg {
+	
+	align-items:center;
+	width:100%;
+	height:800px;
+	margin:0px 0px;
+}
+.imgi {vertical-align: top;}
+.s22 {
+	width:90%;
+	border-right:0px solid #ffffff;
+	
+}
+}
+@media screen and (max-width: 767px) {
+.s2 {
+height:1000px;
+width:100%;
+}
+.simg {
+	
+	align-items:center;
+	width:100%;
+	height:670px;
+}
+}
+@media screen and (max-width: 600px) {
+.s2 {
+height:870px;
+width:100%;
+}
+.simg {
+	
+	align-items:center;
+	width:100%;
+	height:450px;
+}
+.bb {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:90%;
+	margin-top:170px;
+	text-align: center;
+	vertical-align: text-bottom;
+	justify-content:center;
+	align-items:center;
+}
+}
+@media screen and (max-width: 470px) {
+.s2 {
+height:900px;
+width:100%;
+}
+.s22 {
+	margin-right:50px;
+}
+}
+@media screen and (max-width: 406px) {
+.s2 {
+height:600px;
+width:100%;
+}
+
+.simg {
+	align-items:center;
+	width:100%;
+	height:130px;
+}
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  top:110px;
+ }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dding {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height:100%;
+  background-color:#fea9ad;
+  z-index:77;
+  display:none;
+}
+
+
+
+
+
+#myDIV {
+  width: 100%;
+  height:100%;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+.row0 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container0 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row0 {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+.gcashp {
+	display:none;
+}
+
+
+
+.pricet {
+font-size:20px;
+color:red;font-weight:bolder;
+}
+@media screen and (max-width: 450px) {
+.pricet {
+font-size:15px;
+color:red;font-weight:bolder;
+}
+}
+
+</style>
+
+
+
+
+
+ <script>
+  window.console = window.console || function(t) {};
+  var consoleWarn = window.console.warn;
+  function warn(){ consoleWarn.apply(console, arguments); }
+  window.open = function(){ warn("window.open is disabled."); };
+  window.print   = function(){ warn("window.print is disabled."); };
+  window.alert   = function(){ warn("window.alert is disabled."); };
+  window.confirm = function(){ warn("window.confirm is disabled."); };
+  window.prompt  = function(){ warn("window.prompt is disabled."); };
+  window.Notification = function() { warn("HTML5 notifications are disabled."); };
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+	<!--navigation------------------------------>
+		<nav style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; align-items:center; width:100%;height:90px;
+	background-color:#fea9ad;font-family:calibri;font-size:16px;">
+		<!--menu logo-->
+			<div class="logo" style="display:flex;width: 10%;margin-left:50px;">
+			<h1 style="color:white;"></h1>
+			</div>
+		<!---navigations-->
+			<div class="nav" style="display: flex; flex-direction: row; width: 50%; justify-content:flex-end; margin-right:50px;">
+			<a href="index.html" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:2px 1px;">HOME</a>
+			<a href="buy.php" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:4px 2px;">SHOP</a>
+			</div>
+		</nav>
+	
+
+
+
+	<!---web-sub-heading-bb-------------------------------->
+	<div class="bb" style="color:#004d4d;"> <h1>Korean Go</h1><p style="color:#808080; font-size:14px;">Korean Go is a minimart that have an authentic
+	Korean products and foods.<br>The product/s will be deliveried door to door within 24 hours since purchased.<br>
+	Available only within the City of Malaybalay. <br>Order and experience authentic Korean foods, and taste Korea!</p></div>
+	
+	
+	
+	
+	<div class="bb" style="color:#004d4d;margin-top:250px;"> <h2 style="font-weight:bold;">All Products</h2></div>
+
+
+<div class="slider">
+  <div class="slide" id="slide-1"  	 title="Lotte Pepero Original (PHP 75.00)"> <img class="subimg" src="image/pepero2.png"></div>
+  <div class="slide" id="slide-2" onclick="currentSlide(2)" title="Lotte Pepero Almond (PHP 90.00)"> <img class="subimg" src="image/pepero3.png"></div>
+  <div class="slide" id="slide-3" onclick="currentSlide(3)" title="Lotte Pepero Cookies and Cream (PHP 80.00)"> <img class="subimg" src="image/pepero4.png"></div>
+  <div class="slide" id="slide-4" onclick="currentSlide(4)" title="Lotte Pepero  Strawberry (PHP 80.00)"><img class="subimg" src="image/pepero5.png"></div>
+  <div class="slide" id="slide-5" onclick="currentSlide(5)" title="Bibigo Dried Seaweed Snack (PHP 20.00)"> <img class="subimg" src="image/pepero1.png"></div>
+  <div class="slide" id="slide-1" onclick="currentSlide(6)" title="Samyang Hot Chicken Ramen (PHP 100.00)"> <img class="subimg" src="image/samyang1.png"></div>
+  <div class="slide" id="slide-2" onclick="currentSlide(7)" title="Samyang Cheese Hot Chicken Ramen (PHP 100.00)"> <img class="subimg" src="image/samyang2.png"></div>
+  <div class="slide" id="slide-3" onclick="currentSlide(8)" title="Samyang Spicy Red x4 Chicken Ramen (PHP 135.00)"> <img class="subimg" src="image/samyang3.png"></div>
+  <div class="slide" id="slide-4" onclick="currentSlide(9)" title="Samyang Spicy Red x2 Chicken Ramen (PHP 135.00)"> <img class="subimg" src="image/samyang4.png"></div>
+  <div class="slide" id="slide-5" onclick="currentSlide(10)" title="Samyang Super Spicy Fire Ramen (PHP 100.00)"><img class="subimg" src="image/samyang5.png"></div>
+  <div class="slide" id="slide-1" onclick="currentSlide(11)" title="Hot and Spicy Yopokki (PHP 175.00)"> <img class="subimg" src="image/yopokki1.png"></div>
+  <div class="slide" id="slide-2" onclick="currentSlide(12)" title="Sweet and Spicy Yopokki (PHP 175.00)"> <img class="subimg" src="image/yopokki2.png"></div>
+  <div class="slide" id="slide-3" onclick="currentSlide(13)" title="Cheese Yopokki (PHP 175.00)"> <img class="subimg" src="image/yopokki3.png"></div>
+  <div class="slide" id="slide-4" onclick="currentSlide(14)" title="Golden Onion Butter Yopokki (PHP 175.00)"> <img class="subimg" src="image/yopokki4.png"></div>
+  <div class="slide" id="slide-5" onclick="currentSlide(15)" title="Bingrae Banana Milk (PHP 85.00)"> <img class="subimg" src="image/binggrae1.png"></div>
+  <div class="slide" id="slide-1" onclick="currentSlide(16)" title="Bingrae Strawberry Milk (PHP 85.00)"> <img class="subimg" src="image/binggrae2.png"></div>
+  <div class="slide" id="slide-2" onclick="currentSlide(17)" title="Chupa Chups Orange Sparkling Drink (PHP 60.00)"> <img class="subimg" src="image/chupa1.png"></div>
+  <div class="slide" id="slide-3" onclick="currentSlide(18)" title="Chupa Chups Grapes Sparkling Drink (PHP 60.00)"> <img class="subimg" src="image/chupa2.png"></div>
+  <div class="slide" id="slide-4" onclick="currentSlide(19)" title="Chupa Chups Strawberry Sparkling Drink (PHP 60.00)"> <img class="subimg" src="image/chupa3.png"></div>
+  <div class="slide" id="slide-5" onclick="currentSlide(20)" title="Chupa Chups Melon Cream Sparkling Drink (PHP 60.00)"> <img class="subimg" src="image/chupa4.png"></div>
+</div>	
+
+
+
+
+
+
+<div id="app" class="container" style="display:flex;flex-direction:column;width:100%;padding:0px 0px;">
+   <!--<div class="text-right" style="text-align:center;width:100%;margin:45px 0px;"><button class="btn" data-toggle="modal" data-target="#cartModal" ><i style="font-size:24px" class="fa">&#xf07a;</i><sub style="background-color:#bf1104;padding:1px 4px;border-radius:50%;">{{cartItems.length}}</sub></button></div>--->
+   <!-- Modal --> 
+   <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">          <span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Cart</h4>
+            </div>
+            <div class="modal-body">
+               <shopping-cart inline-template :items="cartItems">
+                  <div>
+                     <table class="table table-cart">
+                        <tr v-for="(item, index) in items">
+                           <td>{{item.title}}</td>
+                           <td style="width:120px">QTY:
+                              <input v-model="item.qty" class="form-control input-qty" type="number">
+                           </td>
+                           <td class="text-right">PHP {{item.price | formatCurrency}}</td>
+                           <td>
+                              <button @click="removeItem(index)" style="border:none;"><i class="fa fa-trash"></i></button>
+                           </td>
+                        </tr>
+                        <tr v-show="items.length === 0">
+                           <td colspan="4" class="text-center">Cart is empty</td>
+                        </tr>
+                        <tr v-show="items.length > 0">
+                           <td></td>
+                           <td class="text-right" style="text-align:center">Cart Total:</td>
+                           <td class="text-right pricet">PHP {{Total | formatCurrency}}</td>
+                           <td></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <!-- /.container -->
+               </shopping-cart>
+            </div>
+            <div class="modal-footer">
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<div id="myDIV" style="display:none;">
+			
+			
+			
+			
+								
+					<div class="row0">
+					  <div class="col-75">
+						<div class="container0">
+						  <form method="post" action="contact.php">
+						  
+							<div class="row0">
+							
+							
+							  <div class="col-50">
+								<h3>Payment Method</h3>								
+								<label for="how">Choose your preffered Payment Method </label>
+								
+								<div style="display:flex;flex-direction:row;height:20px;">
+								<input type="radio" id="method1" name="Payment Method" value="payment" onclick="show1();">
+							    <label for="method1" style="margin-left:5px;color:#808080;font-weight:300;">Cash On Delivery</label><br>
+							    </div>
+								
+							    <div style="display:flex;flex-direction:row;margin-bottom:5px;height:20px;">
+								<input type="radio" id="method2" name="Payment Method" value="payment" onclick="show2();">
+							    <label for="method2" style="margin-left:5px;color:#808080;font-weight:300;">Pay Online (Gcash)</label><br> 
+								</div>
+								
+								
+								<div id="gcashpayment" class="gcashp" style="background-color:#d1d1d1;padding-top:12px;margin-top:12px;padding-right:7px;padding-left:7px;padding-bottom:12px;">							
+								<label>Pay with Gcash using QR code</label>
+								
+								
+								<div style="display:flex;flex-direction:column;height:auto;justify-content:center;align-items:center;margin-bottom:12px;">
+								<p style="margin-bottom:0px;font-size:14px;color:#808080;">Step 1: Download the QR code: 
+								<a href="image/qr.png" download="Korean-Go's QR code"><i class="fa fa-download" style="font-size:15px;color:blue;"></i></a></p>
+								<img src="image/qr.png" style="height:77px;width:77px;">
+								</div>
+								
+								<div style="display:flex;flex-direction:column;height:auto;justify-content:center;align-items:center;margin-bottom:12px;">
+								<p style="margin-bottom:0px;font-size:14px;color:#808080;">Step 2: Log in to your GCash App and tap "Send Money" on your dashboard.</p>
+								<img src="image/step2.png" style="height:auto;max-width:200px;">
+								</div>
+								
+								<div style="display:flex;flex-direction:column;height:auto;justify-content:center;align-items:center;margin-bottom:12px;">
+								<p style="margin-bottom:0px;font-size:14px;color:#808080;">Step 3: Tap "Send via QR"</p>
+								<img src="image/step3.png" style="height:auto;max-width:200px;">
+								</div>
+								
+								<div style="display:flex;flex-direction:column;height:auto;justify-content:center;align-items:center;margin-bottom:12px;">
+								<p style="margin-bottom:0px;font-size:14px;color:#808080;">Step 4: Upload a saved QR from your photos.</p>
+								<img src="image/step4.png" style="height:auto;max-width:200px;">
+								</div>
+								
+								<div style="display:flex;flex-direction:column;height:auto;justify-content:center;align-items:center;margin-bottom:12px;">
+								<p style="margin-bottom:0px;font-size:14px;color:#808080;">Step 5. Input the name,Korean-GO, and the amount you have to pay, then tap "Next".</p>
+								<img src="image/step5.png" style="height:auto;max-width:200px;">
+								</div>
+								
+								<div style="display:flex;flex-direction:column;height:auto;justify-content:center;align-items:center;margin-bottom:12px;">
+								<p style="margin-bottom:0px;font-size:14px;color:#808080;">Step 6. Review the details that you provided then tap "Send".</p>
+								<img src="image/step6.png" style="height:auto;max-width:200px;">
+								</div>
+								
+								<div style="display:flex;flex-direction:row;height:auto; justify-content:center;">
+								<input type="checkbox" id="done" name="Check if Done" value="Done">
+								<label for="done" style="margin-left:5px;font-weight:300;font-weight:bold;"> Done </label>
+								</div>
+								
+								
+								
+								</div>
+								<script>
+								function show1(){
+								  document.getElementById('gcashpayment').style.display ='none';
+								}
+								function show2(){
+								  document.getElementById('gcashpayment').style.display = 'block';
+								}
+								</script>
+								
+							  </div>
+							
+							
+							  <div class="col-50">
+								<h3>Billing Address</h3>
+								<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+								<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+								<label for="email"><i class="fa fa-envelope"></i> Email</label>
+								<input type="text" id="email" name="email" placeholder="john@example.com">
+								<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+								<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+								<label for="city"><i class="fa fa-institution"></i> City</label>
+								<input type="text" id="city" name="city" placeholder="New York">
+
+								<div class="row0">
+								  <div class="col-50">
+									<label for="state">State</label>
+									<input type="text" id="state" name="state" placeholder="NY">
+								  </div>
+								  <div class="col-50">
+									<label for="zip">Zip</label>
+									<input type="text" id="zip" name="zip" placeholder="10001">
+								  </div>
+								</div>
+								
+								<label>
+								 <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+								</label>
+								
+							  </div>
+
+
+							  
+							</div>
+							
+							<input type="submit" value="Continue to checkout" class="btn">
+						  </form>
+						</div>
+					  </div>
+					</div>
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			
+	
+	
+	
+	
+			<!--this.style.visibility= 'hidden';---->
+			<button onclick="myFunction();this.style.visibility= 'hidden'; " class="btna" id="target">Buy Now</button>
+			
+			
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myDIV");
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+			  } else {
+				x.style.display = "none";
+			  }
+			}
+			
+			
+			</script>
+			
+			
+			   <button type="button" class="btna" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+	
+	
+	<button class="btna" data-toggle="modal" data-target="#cartModal"  style="z-index:100;position:fixed;bottom:20px;right:20px;padding: 7px 3px;background-color:#bf1104;"><i style="font-size:24px" class="fa">&#xf07a;</i><sub style="background-color:#bf1104;padding:1px 4px;border-radius:50%;">{{cartItems.length}}</sub></button>
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+   <div class="container uprow" id="indibuy" style="text-align:center; height:100%;width:100%;background-color:rgba(0,36,72, 1);">
+      <div class="row  slider s2" style="margin-top:40px;text-align:center;width:100%;margin-right:0px;margin-left:0px;margin-bottom:0px;">
+		 <div class="col-xs-3 slide s22" v-for="item in items" style="">
+            <img class="simg imgi" :src="item.image" alt="" >
+            <div class="text1">
+				<h3>{{ item.title}}</h3>
+				<h4>PHP {{ item.price | formatCurrency }}</h4>
+				<p>{{item.description}}</p>
+				<p style="text-align:left;">Quantity:<input v-model="item.qty" type="number" class="form-control" placeholder="Qty" min="1"/></p>	
+               <button @click="addToCart(item)" class="btna">Add to Cart</button> <br>
+			    </div>
+         </div>
+      </div>
+   </div>
+   
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+      <script id="rendered-js" >
+ products = [
+{ id: 1, title: 'Lotte Pepero Original', price: 75.00, qty: 1, image: 'image/Bpepero2.png', description: 'Smooth chocolate attached to a delicious biscuit Stick Biscuit & Chocolate Chocolate coated biscuit sticks Allergy Advice: Contains Wheat, Milk, Egg, Soya, Almond. May contain almond, peanut, pork. Keep in a cool and dry place between 18-22 Degree C.' },
+{ id: 2, title: 'Lotte Pepero Almond', price: 90.00, qty: 1, image: 'image/	Bpepero3.png' , description: 'Pepero Almond Chocolate is Koreas No. 1 brand biscuit sticks covered in gorgeous thin layer of chocolate, generously sprinkled with crushed almonds. Pepero come in smart packaging and make a lovely gift.'},
+{ id: 3, title: 'Lotte Pepero Cookies and Cream', price: 80.00, qty: 1, image: 'image/Bpepero4.png' , description: 'These deliciously crunchy biscuit sticks are a fun and rarer alternative to the popular Glico Pocky. Pepero is Koreas answer to Pocky, produced by Korean confectionery company Lotte. They have made Pepero sticks with special features! ' },
+{ id: 4, title: 'Lotte Pepero Strawberry', price: 80.00, qty: 1, image: 'image/Bpepero5.png' , description: 'Pepero Strawberry Cookie, is a biscuit stick covered in gorgeous thick strawberry flavoured creamy frosting, generously sprinkled with chunky bits of crushed strawberry cookie.'},
+{ id: 5, title: 'Bibigo Dried Seaweed Snack', price: 20.00, qty: 1, image: 'image/Bpepero1.png' , description: 'Our Korean seaweed snacks are roasted to perfection and seasoned with a dash of salt and sesame oil, creating a savory experience that will delight you palate.'},
+{ id: 6, title: 'Samyang Hot Chicken Ramen', price: 100.00, qty: 1, image: 'image/Bsamyang1.png' , description: 'Samyang Hot Chicken Ramen spiciness is about 8000 units, with a Scoville rating of about 8000 units (which is the equivalent of eating an entire jalapeno), this Samyang flavor not only became a viral internet challenge.'},
+{ id: 7, title: 'Samyang Cheese Hot Chicken Ramen', price: 100.00, qty: 1, image: 'image/Bsamyang2.png' , description: 'Samyang Cheese Hot Chicken Flavor Ramen is a variety of famous Korean spicy noodle variety from Samyang brand. It is the cheese flavoured version of Samyangs original Buldak Bokkeum Myeon noodles, one of the hottest Korean noodles.'},
+{ id: 8, title: 'Samyang Spicy Red x4 Chicken Ramen', price: 135.00, qty: 1, image: 'image/Bsamyang3.png' , description: 'Samyang Spicy Red Chicken Ramen, x4, With a Scoville rating of about 8000 units (which is the equivalent of eating an entire jalapeno), this Samyang flavor not only became a viral internet challenge.'},
+{ id: 9, title: 'Samyang Spicy Red x2 Chicken Ramen', price: 135.00, qty: 1, image: 'image/Bsamyang4.png' , description: 'Samyang Spicy Red Chicken Ramen, x2, With a Scoville rating of about 8000 units (which is the equivalent of eating an entire jalapeno), this Samyang flavor not only became a viral internet challenge.'},
+{ id: 10, title: 'Samyang Super Spicy Fire Ramen', price: 100.00, qty: 1, image: 'image/Bsamyang5.png' , description: 'Super Spicy Fire Noodle Samyang Ramen Product: Spicy Fire Chicken flavor Noodles. Strong spicy : SHU are Scoville Heat Units, a way to rate the degree of spiciness. This noodles is about 4,404 SHU.'},
+{ id: 11, title: 'Hot and Spicy Yopokki', price: 175.00, qty: 1, image: 'image/Byopokki1.png' , description: 'This instant Topokki cup is enriched by spicy seasoning to maximize authentic flavor of hot Topokki. When the water starts boiling turn down the heat and cook for five mins. Add fish sausage, sweet potato starch noodle, egg  to your taste.'},
+{ id: 12, title: 'Sweet and Spicy Yopokki', price: 175.00, qty: 1, image: 'image/Byopokki2.png' , description: 'You will experience the rich flavor of Jjajang sauce. This instant Topokki cup is enriched by spicy seasoning to maximize authentic flavor of hot Topokki. Add fish sausage, sweet potato starch noodle to your taste.'},
+{ id: 13, title: 'Cheese Yopokki', price: 175.00, qty: 1, image: 'image/Byopokki3.png' , description: 'Cheese Yopokki can be enjoyed various flavor by easy cooking like instant ramen. YOPOKKI has 2 type packing, cup and pouch, and 3 flavor, spicy, cheese and hot. This is a cup-shape product which is composed of rice cake and Cheese sauce of Topokki. '},
+{ id: 14, title: 'Golden Onion Butter Yopokki', price: 175.00, qty: 1, image: 'image/Byopokki4.png' , description: 'This new product enriches the flavor of Topokki with aromatic onion butter. This instant Topokki cup is a great combination of onion butter sauce and chewy rice pasta, and easy to cook in a microwave.'},
+{ id: 15, title: 'Bingrae Banana Milk', price: 85.00, qty: 1, image: 'image/Bbinggrae1.png' , description: 'In essence, Korean banana milk is a banana flavored milk. Its been a steady seller ever since. Binggrae banana milk contains 85% milk, purified water, sugar, 0.32% banana juice concentrate, carotene, artificial flavors – banana and vanilla.'},
+{ id: 16, title: 'Bingrae Strawberry Milk', price: 85.00, qty: 1, image: 'image/Bbinggrae2.png' , description: 'The milk of Korea since 1974. to be loved by everyone as the No. 1 processed milk product. Also called as jar milk, Binggrae Flavored Milk will fill your stomach and heart.'},
+{ id: 17, title: 'Chupa Chups Orange Sparkling Drink', price: 60.00, qty: 1, image: 'image/Bchupa1.png' , description: 'The ever-popular flavours of Chupa Chups lollipops have been captured and turned into deliciously refreshing fizzy drinks. The Chupa Chups sparkling orange cans are bursting with orange flavour, perfect refreshment for a hot summer’s day!'},
+{ id: 18, title: 'Chupa Chups Grapes Sparkling Drink', price: 60.00, qty: 1, image: 'image/Bchupa2.png' , description: 'The delicious Chupa Chups lollipop is a childhood memory par excellence that has toured the playgrounds around the world. Chupa Chups sparkling is a soft drink that takes the famous Grape scent succulent round lollipops. '},
+{ id: 19, title: 'Chupa Chups Strawberry Sparkling Drink', price: 60.00, qty: 1, image: 'image/Bchupa3.png' , description: 'The delicious Chupa Chups lollipop is a childhood memory par excellence that has toured the playgrounds around the world. Chupa Chups sparkling is a soft drink that takes the famous strawberry scent succulent round lollipops.'},
+{ id: 20, title: 'Chupa Chups Melon Cream Sparkling Drink', price: 60.00, qty: 1, image: 'image/Bchupa4.png' , description: 'Bubbling drink that tastes just like Chupa Chups sweets. Perfect soda feel-good drink to brighten up your day that not only tastes good, but also makes you happy. Melon flavour mixed with milky cream.'}]
+
+
+function formatNumber(n, c, d, t) {
+  var c = isNaN(c = Math.abs(c)) ? 2 : c,
+  d = d === undefined ? '.' : d,
+  t = t === undefined ? ',' : t,
+  s = n < 0 ? '-' : '',
+  i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+  j = (j = i.length) > 3 ? j % 3 : 0;
+  return s + (j ? i.substr(0, j) + t : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : '');
+};
+
+// Allow the formatNumber function to be used as a filter
+Vue.filter('formatCurrency', function (value) {
+  return formatNumber(value, 2, '.', ',');
+});
+
+// The shopping cart component
+Vue.component('shopping-cart', {
+  props: ['items'],
+
+  computed: {
+    Total() {
+      let total = 0;
+      this.items.forEach(item => {
+        total += item.price * item.qty;
+      });
+      return total;
+    } },
+
+
+  methods: {
+    // Remove item by its index
+    removeItem(index) {
+      this.items.splice(index, 1);
+    } } });
+
+
+
+const vm = new Vue({
+  el: '#app',
+
+  data: {
+    cartItems: [],
+    items: products },
+
+
+  methods: {
+    // Add Items to cart
+    addToCart(itemToAdd) {
+      let found = false;
+
+      // Add the item or increase qty
+      let itemInCart = this.cartItems.filter(item => item.id === itemToAdd.id);
+      let isItemInCart = itemInCart.length > 0;
+
+      if (isItemInCart === false) {
+        this.cartItems.push(Vue.util.extend({}, itemToAdd));
+      } else {
+        itemInCart[0].qty += itemToAdd.qty;
+      }
+
+      itemToAdd.qty = 1;
+    } } });
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+
+
+
+
+
+
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+<!--------------------
+For paypal check out
+
+<div id="paypal-button"></div>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+paypal.Button.render({
+// Configure environment
+env: 'sandbox',
+client: {
+sandbox: 'demo_sandbox_client_id',
+production: 'demo_production_client_id'
+},
+// Customize button (optional)
+locale: 'en_US',
+style: {
+size: 'small',
+color: 'gold',
+shape: 'pill',
+},
+// Set up a payment
+payment: function (data, actions) {
+return actions.payment.create({
+transactions: [{
+amount: {
+total: '0.01',
+currency: 'USD'
+}
+}]
+});
+},
+// Execute the payment
+onAuthorize: function (data, actions) {
+return actions.payment.execute()
+.then(function () {
+// Show a confirmation message to the buyer
+window.alert('Thank you for your purchase!');
+});
+}
+}, '#paypal-button');
+</script>
+
+--------------------------->

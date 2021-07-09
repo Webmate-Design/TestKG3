@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Korean Go, Korean Food, snack, malaybalay, dessert">
+	<meta name="description" content="Korean Go is a minimart that have an authentic Korean products and foods.The product/s will be deliveried door to door within 24 hours since purchased. Available only within the City of Malaybalay. Order and experience authentic Korean foods, and taste Korea!">
+	<meta name="author" content="">
+	<meta http-equiv="refresh" content="50">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>CLIENT</title>
+	
+	<link rel="stylesheet" type="text/css" href="sample.css">
+	<link rel="stylesheet" type="text/css" href="lightslider.css">
+	<link rel="shortcut icon" type="image/png" href="image/favicon.ico">
+	<!--script jssss---------->
+	<script type="text/javascript" src="Jquery.js"></script>
+	<script type="text/javascript" src="lightslider.js"></script>
+	<script type="text/javascript" src="samplej.js"></script>
+	
+	<style> 
+	body {
+	background-color:#fea9ad;
+	}
+	.n1 {
+	border-bottom-style: solid;
+	}
+	.mySlides {
+	height:600px;
+	}
+	.shopimage {
+	height:100%;
+	}
+	.text {
+	top:55%;
+	left:33.3%;
+	right:5%;
+	top:310px;
+	vertical-align: text-bottom;
+	justify-content:center;
+	align-items:center;
+	width:423px;
+	height:auto;
+	border-bottom: 1px solid #ffffff;
+	color:#ffffff;
+	font-size:13px;
+	position:absolute;
+	}
+	
+	.title {
+	position:fixed;z-index:20;top:280px;
+	font-size:48px;
+	color:#ffffff;
+	}
+	
+	.h-button {
+	position:fixed;z-index:20;top:455px;
+	left:15.5%;
+	border:none;
+	color:#ffffff;
+	background-color: blue;
+	padding:2px 8px;
+	border-radius:70px;
+	}
+	.h-button:hover {
+	background-color:skyblue;
+	}
+	
+	@media screen and (min-width: 1025px) {
+	.title {
+	position:fixed;z-index:20;top:200px;
+	left:45px;
+	font-size:48px;
+	color:#ffffff;
+	}
+	.text {
+	left:51.5px;
+	top:230px;
+	}
+	.h-button {
+	left:51.5px;
+	}
+	}
+	
+	@media screen and (max-width: 1024px) {
+	.mySlides {
+	height:1024px;
+	}
+	.title {
+	position:fixed;z-index:20;top:500px;
+	font-size:40px;
+	width:100%;
+	text-align:center;
+	background-color:rgba(0,36,72,1);
+	}
+	.shoptext {
+	top:50%;
+	bottom:50%;
+	}
+	.text {
+	top:510px;
+	right:5%;
+	left:4%;
+	text-align: center;
+	vertical-align: text-bottom;
+	justify-content:center;
+	align-items:center;
+	min-height:94px;
+	width:90%;
+	border-bottom-color:#ffffff;
+	color:#ffffff;
+	font-size:13px;
+	position:absolute;
+	background-color:rgba(254,169,173, 0.5);
+	}
+	.h-button {
+	position:fixed;z-index:20;top:718px;
+	right:55%;
+	left:45%;
+	border:none;
+	color:#ffffff;
+	background-color:#004d4d;;
+	padding:2px 8px;
+	border-radius:70px;
+	}
+	}
+	@media screen and (max-width: 767px) {
+	.mySlides {
+	height:568px;
+	}
+	.title {
+	position:fixed;z-index:20;top:410px;
+	font-size:25px;
+	padding-bottom:5px;
+	padding-top:5px;
+	}
+	.shoptext {
+	top:50%;
+	bottom:50%;
+	}
+	.text {
+	top:55%;
+	bottom:45%;
+	top:391px;
+	right:5%;
+	left:5%;
+	text-align: center;
+	vertical-align: text-bottom;
+	justify-content:center;
+	align-items:center;
+	min-height:108px;
+	width:90%;
+	border-bottom-color:#ffffff;
+	color:#ffffff;
+	font-size:13px;
+	position:absolute;
+	}
+	.h-button {
+	display: none
+	}
+	}
+	/* width */
+	::-webkit-scrollbar {
+	width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	}
+ 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	background: #888; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+	}
+	
+	
+	.homebg {
+	position:fixed;
+	left:0px;
+	top:150px;
+	width:600px;
+	z-index:-1;
+	}
+	.homebg img {
+	width:100%;
+	height:auto;
+	}
+	@media screen and (max-width: 1024px) {
+	.homebg {
+	display:none;
+	}
+	}
+	@media screen and (max-width: 406px) {
+	.homebg {
+	position:fixed;
+	left:0px;
+	top:400px;
+	margin-bottom:0px;
+	width:100%;
+	height:345px;
+	z-index:-1;
+	display:block;
+	}
+	.title {
+	background-color:rgba(0,36,72,0);
+	}
+	.text {
+	background-color:rgba(254,169,173, 0);
+	border-bottom: none;
+	}
+	}
+	
+	
+	
+	</style>
+</head>
+<body>
+
+
+
+
+
+
+	<!--navigation------------------------------>
+		<nav style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; align-items:center; width:100%;height:90px;
+	background-color:#fea9ad;font-family:calibri;font-size:16px;">
+		<!--menu logo-->
+			<div class="logo" style="display:flex;width: 10%;margin-left:50px;">
+			<h1 style="color:white;">KG</h1>
+			</div>
+		<!---navigations-->
+			<div class="nav" style="display: flex; flex-direction: row; width: 50%; justify-content:flex-end; margin-right:50px;">
+			<a href="index.html" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:0px 0px;">HOME</a>
+			<a href="buy.php" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:0px 0px;">SHOP</a>
+			</div>
+		</nav>
+	
+	
+<!---slider-aa--------------------------------------->
+	<div class="aa">	
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/home02.png" media="(max-width: 767px)" style="width:99%;">
+  <source srcset="image/home01.png" media="(max-width: 1024px)" style="width:99%;">
+  <source srcset="image/home0.png" style="width:99%;">
+  <img src="image/home0.png" style="width:99%;">
+	</picture>
+  <div class="text">
+  	  <h1>TASTE YUMMY PEPERO!</h1>
+	  Every year on November 11th, Koreans up and down the country indulge in the most delicious,
+	  chocolatey Pepero. That's because November 11th is Pepero Day in Korea. Try and experience 
+	  Korea's chocolate day celebration, Pepero!
+	  </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/home12.png" media="(max-width: 767px)" style="width:99%;">
+  <source srcset="image/home11.png" media="(max-width: 1024px)" style="width:99%;">
+  <source srcset="image/home1.png" style="width:99%;">
+  <img src="image/home1.png" style="width:99%;">
+	</picture>
+  <div class="text">
+  <h1>SAVOR SPICIEST SAMYANG!</h1>
+  People who tried it and loved it still buy 
+  Samyang's Buldak Bokkeummyun for its painfully 
+  spicy but addicting taste.The Different Flavors
+  Of Samyang's "Fire Noodles," Ranked According To Spice Level.
+  Can you handle the spiciest flavor?
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/home22.png" media="(max-width: 767px)" style="width:99%;">
+  <source srcset="image/home21.png" media="(max-width: 1024px)" style="width:99%;">
+  <source srcset="image/home2.png" style="width:99%;">
+  <img src="image/home2.png" style="width:99%;">
+	</picture>
+  <div class="text">
+  <h1>HOW ABOUT YOPOKKI?</h1>
+  Experience the Authentic Korean Favourite Snack in an Instant!
+  Yopokki captures the unique Korean flavor of everyone's favorite street food, tteokbokki.
+  Don't miss the rich flavor of sweet and spicy sauce of Yopokki.
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/home32.png" media="(max-width: 767px)" style="width:99%;">
+  <source srcset="image/home31.png" media="(max-width: 1024px)" style="width:99%;">
+  <source srcset="image/home3.png" style="width:99%;">
+  <img src="image/home3.png" style="width:99%;">
+	</picture>
+  <div class="text">
+   <h1>TRY OUR BINGGRAE!</h1>
+  Binggrae's Banana-flavored milk is Korea’s  national 
+  favorite No.1 selling Banana milk. Binggrae gives the 
+  taste full of nutrients.  Taste different chocolatey flavored Binggrae!
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <picture style="padding: 0px 0px; margin: 0px 0px;">
+  <source srcset="image/home42.png" media="(max-width: 767px)" style="width:99%;">
+  <source srcset="image/home41.png" media="(max-width: 1024px)" style="width:99%;">
+  <source srcset="image/home4.png" style="width:99%;">
+  <img src="image/home4.png" style="width:99%;">
+	</picture>
+  <div class="text">
+  <h1>HAVE CHUPA CHUPS!</h1>
+  Sweet, and refreshing with an almost creamy aftertaste,
+  and a distinct note of citrus. It’s a very light and smooth
+  drink that hits the palate just right. It’s also incredibly
+  moreish, and tastes significantly. Try Chupa Chups now!
+  </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center; width:50%;display:none;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 4 seconds
+}
+</script>
+
+					
+	</div>
+
+
+
+<div class="title"><h1>Korean GO</h1></div>
+
+
+
+
+<a href="buy.html#indibuy"><button class="h-button">Shop Now</button></a>
+
+<div class="homebg">
+		<picture>
+			<source srcset="image/homee.png" media="(max-width: 406px)" style="width:100%;">
+			<img src="image/home.png">
+		</picture>
+</div>
+
+</body>
+</html>
