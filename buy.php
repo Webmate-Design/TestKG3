@@ -743,7 +743,7 @@ color:red;font-weight:bolder;
 		<!---navigations-->
 			<div class="nav" style="display: flex; flex-direction: row; width: 50%; justify-content:flex-end; margin-right:50px;">
 			<a href="index.html" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:2px 1px;">HOME</a>
-			<a href="buy.php" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:4px 2px;">SHOP</a>
+			<a href="buy.html" class="nav1" style="width:45px;height:12px;display:flex;justify-content:center;align-items:center;text-align: center; font-family:calibri; font-weight:; font-family:calibri; border-radius:70px; margin-left:10px; text-decoration:none; font-size:13px; color:#ffffff; padding:4px 2px;">SHOP</a>
 			</div>
 		</nav>
 	
